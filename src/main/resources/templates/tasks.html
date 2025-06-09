@@ -14,7 +14,7 @@
 
 <ul>
     <li th:each="task : ${tasks}">
-        <span th:utext="${task.description}"></span>
+        <span th:text="${task.description}"></span>
         <a th:href="@{'/delete/' + ${task.id}}">Delete</a>
     </li>
 </ul>
